@@ -3,11 +3,14 @@
 <suite name="Cnn UI Tests" parallel="tests">
 
     <!-- If useSauce is false then all tests are on local-->
-    <parameter name="useSauceLab" value="true"/>
-    <parameter name="localPlatform" value="false"/>
+    <parameter name="userName" value="rahmanww"/>
+    <parameter name="key" value="e45ab198-cbcb-4f8f-89b9-639b0894e0bf"/>
 
-    <parameter name="URL" value=""/>
-    <parameter name="userName" value=""/>
+    <parameter name="useSauceLabs" value="true"/>
+    <!--<parameter name="localPlatform" value="false"/>-->
+
+    <parameter name="url" value="http://www.cnn.com"/>
+    <!--<parameter name="userName" value=""/>-->
     <parameter name="password" value=""/>
 
 
@@ -18,8 +21,8 @@
     <!--caps.setCapability("platform", "Windows 8");-->
     <!--caps.setCapability("version", "25");-->
 
-    <test name="Cnn on Windows-8 with firefox Tests">
-        <parameter name="os" value="Win8"/>
+    <test name="Cnn on VISTA with firefox Tests">
+        <parameter name="os" value="VISTA"/>
         <!--<parameter name="browser" value="googlechrome"/>-->
         <parameter name="browser" value="firefox"/>
         <parameter name="browserVersion" value="25"/>

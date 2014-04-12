@@ -14,6 +14,11 @@
     <packaging>jar</packaging>
     <name>cnn</name>
 
+    <properties>
+        <testNgFile>runner.xml</testNgFile>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <build>
         <plugins>
             <plugin>

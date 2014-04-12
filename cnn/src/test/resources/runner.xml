@@ -17,15 +17,12 @@
     <parameter name="" value=""/>
     <parameter name="" value=""/>
     <parameter name="" value=""/>
-    <!--DesiredCapabilities caps = DesiredCapabilities.firefox();-->
-    <!--caps.setCapability("platform", "Windows 8");-->
-    <!--caps.setCapability("version", "25");-->
 
     <test name="Cnn on VISTA with firefox Tests">
-        <parameter name="os" value="VISTA"/>
+        <parameter name="os" value="Windows 8"/>
         <!--<parameter name="browser" value="googlechrome"/>-->
         <parameter name="browser" value="firefox"/>
-        <parameter name="browserVersion" value="25"/>
+        <parameter name="browserVersion" value="27"/>
         <!--<parameter name="browser" value="safari"/>-->
         <classes>
             <class name="home.NavigationTab"/>

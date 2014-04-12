@@ -15,7 +15,7 @@
     <name>cnn</name>
 
     <properties>
-        <testNgFile>runner.xml</testNgFile>
+        <testRunner>runner.xml</testRunner>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

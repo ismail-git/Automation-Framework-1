@@ -26,7 +26,7 @@
         <!--<parameter name="browser" value="safari"/>-->
         <classes>
             <class name="home.NavigationTab"/>
-            <!--<class name= "LogIn"/>-->
+            <class name= "home.LogIn"/>
         </classes>
     </test>
     <!-- Test specific params are defined below this-->

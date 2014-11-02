@@ -11,10 +11,11 @@
 
     <artifactId>generic</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
+   <!-- <version>1.0-SNAPSHOT</version>-->
     <name>generic</name>
 
     <build>
+        <pluginManagement>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -33,6 +34,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        </pluginManagement>
     </build>
 
     <dependencies>
@@ -52,6 +54,11 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
         </dependency>
+      <!--  <dependency>
+            <groupId>Automation-Framework</groupId>
+            <artifactId>Automation-Framework</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency> -->
     </dependencies>
 
 </project>

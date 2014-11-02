@@ -4,6 +4,7 @@ import base.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+
 import java.util.List;
 
 /**
@@ -37,6 +38,7 @@ public class NavigationTab extends Base {
             navTabLinks = getWebEelementsByCss("#cnn_hdr-nav li");
         }
     }
+
 
     public void clickOnNews(String locator){
         List<String> news = getListOfString(locator);

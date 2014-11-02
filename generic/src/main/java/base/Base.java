@@ -1,18 +1,19 @@
 package base;
 
-import org.openqa.selenium.*;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
@@ -51,6 +52,7 @@ public class Base {
         capabilities.setBrowserName(browser);
         capabilities.setCapability("version", browserVersion);
         capabilities.setCapability("platform", os);
+        capabilities.setCapability("name","Automation-Framework-CNN");
         this.driver = new RemoteWebDriver(
                 new URL("http://" + userName + ":" + key + "@ondemand.saucelabs.com:80/wd/hub"),
                 capabilities);
@@ -79,7 +81,7 @@ public class Base {
 
     @AfterClass
     public void tearDown() throws Exception {
-        driver.close();
+        driver.quit();
     }
 
 

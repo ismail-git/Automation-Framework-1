@@ -18,7 +18,7 @@ public class TopNav extends Page {
     String [][] locators;
     @Test
     public void topNav() throws IOException {
-        String path = "C:\\Users\\rrt\\IdeaProjects\\Automation-Framework\\excelfile.xls";
+        String path = "/Users/ismailosmanjan/IdeaProjects/Automation-Framework-1/excelfile.xls";
         locators = dataReader.fileReader(path);
         for(int i=0; i<locators.length; i++){
             for(int j=1; j<2; j++){
